@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/var/www/html
+    environment:
+      - APP_ENV=local
+      - NENE2_LOCAL_JWT_SECRET=tagmark-dev-secret-change-in-production
+    working_dir: /var/www/html
